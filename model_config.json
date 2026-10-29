@@ -1,0 +1,9 @@
+{
+  "candidate_bands": [25, 26, 27],
+  "selection": "nearest_strictly_below_and_above_EF_per_band",
+  "include_both_pair_orientations": true,
+  "pair_number": "zero_coupling_filling",
+  "interaction": "G_pq = strength_eV / number_of_pair_levels for all p,q",
+  "reference_strength_eV": 0.02,
+  "scan_strengths_eV": [0.0, 0.01, 0.02, 0.05, 0.1]
+}

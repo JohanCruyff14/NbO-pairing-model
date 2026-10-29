@@ -1,0 +1,55 @@
+{
+  "model": "DFT-energy-driven phenomenological reduced pairing prototype v1",
+  "schema_version": 1,
+  "numpy_version": "2.3.5",
+  "config": {
+    "candidate_bands": [
+      25,
+      26,
+      27
+    ],
+    "selection": "nearest_strictly_below_and_above_EF_per_band",
+    "include_both_pair_orientations": true,
+    "pair_number": "zero_coupling_filling",
+    "interaction": "G_pq = strength_eV / number_of_pair_levels for all p,q",
+    "reference_strength_eV": 0.02,
+    "scan_strengths_eV": [
+      0.0,
+      0.01,
+      0.02,
+      0.05,
+      0.1
+    ]
+  },
+  "n_pair_levels": 12,
+  "n_spin_orbitals": 24,
+  "n_pairs": 6,
+  "n_active_electrons": 12,
+  "dimension": 924,
+  "frozen_electron_contribution_included": false,
+  "irreducible_weights_used_in_hamiltonian": false,
+  "full_crystal_point_symmetry_preserved": false,
+  "interaction_is_first_principles": false,
+  "hamiltonian": "H=2 sum_p xi_p N_p - sum_pq G_pq bdag_p b_q; G_pq=gamma/M incl. p=q",
+  "electron_number_rule": "fill all selected negative-xi pair levels at gamma=0; keep this number",
+  "checks": {
+    "pauli_restriction_max_error_eV": 3.3306690738754696e-16,
+    "number_sector_leakage": 0.0,
+    "ground_state_residual_norm_eV": 1.650847321146247e-14
+  },
+  "reference_result": {
+    "strength_eV": 0.02,
+    "G_each_element_eV": 0.0016666666666666668,
+    "ground_energy_eV": -0.2772959832723348,
+    "reference_FS_energy_same_H_eV": -0.2748428799999997,
+    "correlation_energy_eV": -0.002453103272335111,
+    "pair_matrix_largest_eigenvalue": 1.171916432868029,
+    "offdiagonal_pair_sum": 3.5734483220155644,
+    "reference_FS_probability": 0.8588070040041401,
+    "residual_norm_eV": 1.650847321146247e-14
+  },
+  "inputs_sha256": {
+    "model_config.json": "64e2faf379874c764938165445b47b5c4db96159523f1a0fe1eb75216d238632",
+    "data/candidate_bands_25_27.csv": "51d518b576457200cda00dee3e9cd12721bff9cebc844c12d06834c6a260aa86"
+  }
+}

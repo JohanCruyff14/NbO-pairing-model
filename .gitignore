@@ -1,0 +1,16 @@
+# Reproducible numerical output
+/results/
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+# Optional raw DFT inputs belong outside this model repository
+/source_scf/
+POTCAR*
+WAVECAR*
+CHGCAR*

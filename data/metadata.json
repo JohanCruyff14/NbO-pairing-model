@@ -1,0 +1,45 @@
+{
+  "source_description": "User-computed NbO PBE static SCF; original VASP outputs archived separately",
+  "material_reference": "https://legacy.materialsproject.org/materials/mp-2311/",
+  "efermi_eV": 5.97117024,
+  "nelect": 51.0,
+  "integrated_nelect": 51.000013467226,
+  "nk_irreducible": 165,
+  "nbands": 32,
+  "weight_sum": 1.00000038,
+  "ispin": 1,
+  "soc": false,
+  "mesh": [
+    16,
+    16,
+    16
+  ],
+  "candidate_bands": [
+    25,
+    26,
+    27
+  ],
+  "sampled_crossing_bands": [
+    25,
+    26,
+    27
+  ],
+  "all_band_rows_checked": 5280,
+  "candidate_rows": 495,
+  "k_coordinate_convention": "fractional reciprocal-lattice coordinates",
+  "energy_reference": "energy_eV is VASP eigenvalue; xi_eV = energy_eV - efermi_eV",
+  "occupation_convention": "XML ISPIN=1 occupation per spin; multiply by 2 for electron count",
+  "projection_convention": "raw PAW species/angular-momentum sums; not full probabilities",
+  "eigenval_xml_max_energy_difference_eV": 5.000000000165983e-05,
+  "interaction_available": false,
+  "source_sha256": {
+    "EIGENVAL": "10cf0d9e132fb7f1c1b0d608258806478fc7ee9c1bdc5eb37cf177ed9d172ce3",
+    "INCAR": "ea46a41d30ce0eec95bfb303023ab3271b6ded4f7a9554e6c6daba9702549a0e",
+    "KPOINTS": "6db009b6d6e8a4d89a977fcc4bae3d8d6dc0a0634bb0ba4a57efa15e8cdb9e76",
+    "OSZICAR": "1136567c5ca1ad1a0ecc7d3806a8a49527c1f0ab3b977db98f7f230019384281",
+    "OUTCAR": "9a4e5f0b5a45d11d56264ab341eb7bc39db45299350fa6c21a3a26f0f7e69934",
+    "POSCAR": "fd242ed7f68d1491be01ea3b74fb507ae1ec5d3c0cd9c52430c6c450035720e2",
+    "PROCAR": "b89ab0d2f1c29af234c38e5812f9616826542ef0206a9fe264dc69d9f384a966",
+    "vasprun.xml": "e9370b48b0b33d9e6afa1ca95ba76bb40c987e6557937cb7eeb5ba2ca97f30c5"
+  }
+}

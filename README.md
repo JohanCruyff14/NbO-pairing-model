@@ -29,9 +29,18 @@ source .venv/bin/activate
 ```bash
 python -m pip install -r requirements.txt
 python build_pairing_model.py
+python plot_results.py
 ```
 
 不需要 VASP、节点连接或原始波函数。运行后查看 `results/RESULTS.md`；输出目录由 `.gitignore` 忽略，重复运行会更新该目录。修改 `model_config.json` 可调整作用强度，单位为 eV。
+
+`plot_results.py` 读取计算输出，在 `figures/` 生成两张有物理含义的图：零作用与参考作用下的电子对占据数对比，以及配对关联矩阵热图。每张图同时导出 PNG、SVG、PDF，并附绘图 CSV、检查记录和中文解释。绘图不会改变模型参数，也不会重新求解。`figures/` 可随项目提交 GitHub，重复运行绘图会更新其中的生成文件。
+
+![电子对占据数对比](figures/occupations.png)
+
+![配对关联矩阵](figures/pair_correlations.png)
+
+图的逐项解释见 [figures/README.md](figures/README.md)。分数占据是完整电子对占据的平均值；非对角关联是转移相干性，不能直接解释为转移概率或体相超导证据。
 
 ## 模型
 
@@ -57,6 +66,7 @@ $$
 ├── requirements.txt            # 参考计算使用的依赖版本
 ├── model_config.json           # 模型参数
 ├── build_pairing_model.py      # 构造、求基态和 Pauli 映射核对
+├── plot_results.py             # 读取结果，绘制占据数与配对关联
 ├── extract_scf.py              # 可选：从自有原始输出重新提取
 ├── data/
 │   ├── README.md               # 输入字段和来源
@@ -64,6 +74,7 @@ $$
 │   ├── band_summary.csv
 │   └── metadata.json
 ├── reference_results/          # 默认参数的轻量参考结果
+├── figures/                    # 图、绘图数据和解释，可提交 GitHub
 └── results/                    # 运行时生成，不提交到 Git
 ```
 

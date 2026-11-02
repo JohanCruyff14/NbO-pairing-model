@@ -1,0 +1,30 @@
+{
+  "reference_strength_meV": 20.0,
+  "G_each_element_meV": 1.6666666666666667,
+  "n_pairs": 6,
+  "pair_occupation_sum": 5.999999999999997,
+  "pairs_transferred_above_reference_EF": 0.14583877688057822,
+  "max_absolute_occupation_change": 0.06764704441867082,
+  "max_absolute_offdiagonal_correlation": 0.16717087399934716,
+  "offdiagonal_correlation_sum": 3.5734483220155644,
+  "checks": {
+    "all_values_finite": true,
+    "occupation_matches_matrix_diagonal": true,
+    "occupation_matches_level_energies": true,
+    "pair_number_conserved": true,
+    "occupation_in_unit_interval": true,
+    "correlation_symmetric": true,
+    "correlation_positive_semidefinite": true
+  },
+  "numpy_version": "2.3.5",
+  "matplotlib_version": "3.10.8",
+  "inputs_sha256": {
+    "active_levels.csv": "c9667c5acfed46a2f95e6b778764cb2123e4ea681c2280ab36824c6a933a1744",
+    "occupations.csv": "940adabc819c533eb598319c1d4d573e2946ca35b1dce3aed4014dafee2faf0d",
+    "pair_correlation.csv": "91f78b7033bfd17c42c8eec66ae1e88714a2e38acbac7afc0356bd942444c0c6",
+    "model_record.json": "008f5caea6cca3a383465baae1891149aa2856a026b2a792906bb02654406b8e"
+  },
+  "baseline": "Exact gamma=0 product state of the same finite model, not VASP smearing occupations.",
+  "statistics": "Deterministic ground-state observables; no sampling or statistical error bars.",
+  "offdiagonal_display": "Diagonal masked, not set to zero; separate linear color scale."
+}
